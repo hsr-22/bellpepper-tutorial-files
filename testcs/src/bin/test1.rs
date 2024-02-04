@@ -1,5 +1,8 @@
-use bellpepper_core::{test_cs::TestConstraintSystem, ConstraintSystem};
-use pasta_curves::pallas::Scalar as Fq;
+use bellpepper_core::{
+    test_cs::TestConstraintSystem, 
+    ConstraintSystem
+};
+use pasta_curves::pallas::Scalar as Fq; // Fq is a scalar finite field
 
 fn main() {
     let mut cs = TestConstraintSystem::<Fq>::new();
